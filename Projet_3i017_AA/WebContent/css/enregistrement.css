@@ -1,0 +1,90 @@
+#sec{
+    margin: 1%;
+    margin-left: 25%;
+    display: block;
+}
+
+#div_inscription h1 {
+    color: #40A497;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#div_inscription {
+    background-color: #f7fcf4;
+    height: 85%;  
+    opacity: 0.9;
+    padding: 2px 15px 15px;
+    width: 65%;
+    font-family: Arial Narrow, sans-serif;
+}
+
+#div_inscription label{
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: normal;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 1%; 
+}
+
+#div_inscription form {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+#div_inscription .haut {
+    display: inline-block;
+    margin-bottom: 18px;
+    margin-left: 10%;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+}
+
+
+#div_inscription .haut input{
+    margin-left: 10%;
+    width: 100%;
+    padding: 6px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#div_inscription .haut div{
+    margin-left: -10%;
+}
+
+#div_inscription .ids {
+    margin-bottom: 18px;
+}
+
+
+#div_inscription .ids > input {
+    float: right;
+    margin-right: 8%;
+    margin-left: 10%;
+    position: relative;
+    width: 45%;
+    padding: 6px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#submit_inscription {
+    background-color: #40A497;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 39%;
+}

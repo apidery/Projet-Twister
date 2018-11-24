@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+          <script type="text/javascript">
+              if(!connection){
+                $("#profil").html("<a id=\"etat_user\" onClick=\"javascript:makeConnexionPanel()\"> <i class=\"fa fa-user\"></i> Connexion </a>");
+              }else{
+                $("#profil").html("<a id=\"etat_user\" onClick=\"javascript:deconnection()\"> <i class=\"fa fa-user\"></i> Déconnexion </a>");
+                $("#accueil").html("<a class=\"active\" onClick=\"javascript:makeMainPanel()\"> <i class=\"fa fa-home\"></i> Accueil</a>");
+                $("#message").html("<a class=\"active\" href=\"#about\"> <i class=\"fa fa-envelope\"></i> Messages</a>");
+                $("#search").html("<input id=\"recherche\" type=\"text\" placeholder=\"Rechercher..\"></input><button> <i class=\"fa fa-search\"></i></button>");
+              }           
+          </script>
+
+            <div>
+                <ul>
+                  <div id="lien_upmc">
+                    <a href="https://www.sorbonne-universite.fr/"><img id="logo" src="img/logo.png" ></a>
+                  </div>
+                  <li id="accueil"></li>
+                  <li id="message"></li>
+                  <div id="search"></div>
+                  <li id="profil"></li>
+                </ul>
+            </div>
+    
+</html>

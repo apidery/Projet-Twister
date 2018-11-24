@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/profil.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <meta charset="UTF-8"/>
+    </head/>
+
+    <script type="text/javascript">
+        $(function(){
+          $("#header").load("html/header.html"); 
+        });
+       $("#val_abonne").html(env.nb_abonne);
+       $("#val_abonnement").html(env.follows.size);
+       $("#login_user").html(env.login);
+       $("#nom_user").html(env.nom);
+       $("#prenom_user").html(env.prenom);
+       $("#date_naiss_user").html(env.date_naiss);
+       
+       if(env.colorProfil != "null"){
+            var milieu = document.getElementById("milieu");
+            milieu.style.color = env.colorProfil;
+       }
+
+       listFollower(env.login);
+       onlyMessageUser(env.id);
+    </script>
+
+    <body> 
+        <header id="header">
+        </header>
+        <div id="profil_bar">
+            <div id="photo">
+                <img src="img/profil.png" alt="Votre photo de profil"/>
+            </div>
+            <div id="info_profil">
+                <div id="link_profil">
+                    <h2 class="titre_info_profil"> Messages </h2>
+                    <span id="nb_msg"> null</span>
+                </div>
+
+                 <div id="nb_abonnement"> 
+                </div>
+
+                <div id="nb_abonne">
+                    <h2 class="titre_info_profil"> Abonnées</h2>
+                    <span id="val_abonne"> null </span>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <div id="cote_gauche" class="corp" >
+                <div id="info_personnel_profil">
+                    <div id="div_login">
+                        <span id="login_user"></span> 
+                    </div>
+                    <div id="div_nom">
+                       <h2 class="titre_nom_user"> Nom </h2>
+                        <span id="nom_user"></span> 
+                    </div>
+                    <div id="div_prenom">
+                         <h2 class="titre_prenom_user"> Prenom </h2>
+                        <span id="prenom_user"></span>
+                    </div>
+                    <div id="div_date_naiss">
+                        <h2 class="titre_date_naiss_user"> Date de naissance </h2>
+                        <span id="date_naiss_user"></span>
+                    </div>
+                </div>
+                <div id="edit_profil">
+                    <button  type="button" onclick="javascript:edit_profil()"> Editer profil </button>
+                </div>
+                <div id="edit_color">
+                    <button id="button_red" type="button" onclick="javascript:changeColor('red')"> </button>
+                    <button id="button_blue" type="button" onclick="javascript:changeColor('blue')"> </button>
+                    <button id="button_yellow" type="button" onclick="javascript:changeColor('yellow')"> </button>
+                    <button id="button_green" type="button" onclick="javascript:changeColor('green')"> </button>
+                </div>
+            </div>
+
+            <div id="milieu" class="corp">
+                <section id="messages">
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

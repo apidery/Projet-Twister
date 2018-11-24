@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"> 
+<web-app> 
+	<display-name>Twitter</display-name> 
+	
+	<!--- Servlet -->
+	
+	<servlet >
+		<servlet-name>NouveauUser</servlet-name>
+		<servlet-class>servlet.user.CreateUser</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>Connexion</servlet-name>
+		<servlet-class>servlet.user.Login</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>Deconnexion</servlet-name>
+		<servlet-class>servlet.user.Logout</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>NouvelAmi</servlet-name>
+		<servlet-class>servlet.friend.AddFriend</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>SupprimerAmi</servlet-name>
+		<servlet-class>servlet.friend.DeleteFriend</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>ListeAmi</servlet-name>
+		<servlet-class>servlet.friend.ListFriend</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>Recommandation</servlet-name>
+		<servlet-class>servlet.friend.Recommandation</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>AjoutMessage</servlet-name>
+		<servlet-class>servlet.message.AddMessage</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>AfficheMessages</servlet-name>
+		<servlet-class>servlet.message.GetMessages</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>AfficheMessagesUtilisateur</servlet-name>
+		<servlet-class>servlet.message.GetMessagesUser</servlet-class>
+	</servlet>
+	
+	<servlet >
+		<servlet-name>SupprimerMessage</servlet-name>
+		<servlet-class>servlet.message.DeleteMessage</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AjouterCommentaire</servlet-name>
+		<servlet-class>servlet.comments.AddComment</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SupprimerCommentaire</servlet-name>
+		<servlet-class>servlet.comments.DeleteComment</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ListerCommentaires</servlet-name>
+		<servlet-class>servlet.comments.GetComments</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InformationUtilisateur</servlet-name>
+		<servlet-class>servlet.user.InfoUser</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AimerMessage</servlet-name>
+		<servlet-class>servlet.message.AddLike</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Exercice</servlet-name>
+		<servlet-class>servlet.user.ChangeColor</servlet-class>
+	</servlet>
+	
+	
+<!--- Mapping -->
+	
+	<servlet-mapping >
+		 <servlet-name>NouveauUser</servlet-name> 
+		<url-pattern>/user/CreateUser</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>Connexion</servlet-name> 
+		<url-pattern>/user/Login</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>Deconnexion</servlet-name> 
+		<url-pattern>/user/Logout</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>NouvelAmi</servlet-name> 
+		<url-pattern>/friend/AddFriend</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>SupprimerAmi</servlet-name> 
+		<url-pattern>/friend/DeleteFriend</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>ListeAmi</servlet-name> 
+		<url-pattern>/friend/ListFriend</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>Recommandation</servlet-name> 
+		<url-pattern>/friend/Recommandation</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>AfficheMessages</servlet-name> 
+		<url-pattern>/message/GetMessages</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping>
+		<servlet-name>AfficheMessagesUtilisateur</servlet-name>
+		<url-pattern>/message/GetMessagesUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping >
+		 <servlet-name>AjoutMessage</servlet-name> 
+		<url-pattern>/message/AddMessage</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>SupprimerMessage</servlet-name> 
+		<url-pattern>/message/DeleteMessage</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>AjouterCommentaire</servlet-name> 
+		<url-pattern>/comments/AddComment</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>SupprimerCommentaire</servlet-name> 
+		<url-pattern>/comments/DeleteComment</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping >
+		 <servlet-name>ListerCommentaires</servlet-name> 
+		<url-pattern>/comments/GetComments</url-pattern>
+	</servlet-mapping >
+	
+	<servlet-mapping>
+		<servlet-name>InformationUtilisateur</servlet-name>
+		<url-pattern>/user/InfoUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AimerMessage</servlet-name>
+		<url-pattern>/message/AddLike</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Exercice</servlet-name>
+		<url-pattern>/user/ChangeColor</url-pattern>
+	</servlet-mapping>
+	
+</web-app> 

@@ -1,0 +1,178 @@
+body {
+    background-color: #f3f3f3;
+    background-image: none;
+}
+
+
+#publier{
+    display: inline-block;
+    float: right;
+    background-color: #40A497;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+
+div.corp {
+    margin-top: 20px;
+    padding: 5px;
+    vertical-align: top;
+    width: 100%;
+    display: inline-block;
+}
+
+section > form > textarea {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 80%;
+}
+
+section > form > input {
+    color: #256c50;
+}
+
+.comments > div {
+    border: medium solid #b2e6cc;
+    margin: 3%;
+    padding: 5%;
+}
+
+
+#cote_gauche {
+    background-color: #ffffff;
+    text-align: center;
+    width: 18%;
+    margin-left: 3%;
+}
+
+#cote_gauche h2{
+    color : grey;
+    font-weight: bold;
+}
+
+#cote_gauche span{
+    color: #40A497;
+}
+
+#cote_droit{
+    width: 18%;
+    margin-left : 3%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#cote_droit h2{
+    font-size: 23px;
+    color : #40A497;
+}
+
+#photo > img {
+    height: 180px;
+    margin-right: 4px;
+    margin-top: 10px;
+    padding: 1px;
+    width: 180px;
+    cursor: pointer;
+}
+
+#link1 {
+    color: #256c50;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 30px;
+}
+
+section > text {
+    font-family: "Courier New";
+}
+
+#milieu {
+    width: 55%;
+    margin: auto;
+    padding-left: 50px;
+}
+
+#info_profil{
+    width: 100%;
+    float: left;
+    display: inline-block;
+}
+
+#info_profil span{
+
+}
+
+.titre_info_profil{
+    font-size: 15px;
+}
+
+
+#nb_abonne{
+    float: top;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+}
+
+#link_profil{
+    display: inline-block;
+    float: right;
+    width: 30%;
+    height: 100px;
+}
+
+#nb_abonnement{
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+}
+
+#membres{
+    width: 100%;
+}
+
+.recommand{
+    border-bottom:  1px solid #e6ecf0; 
+    height: 45px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.recommand  div{
+    display: inline-block;
+}
+
+.icon_following{
+    cursor: pointer;
+    float: right;
+    width: 52px;
+    height: 100%;
+    margin-right: 3%;
+}
+
+.icon_following img{
+    width: 50%;
+    height: 45%;
+}
+
+.login_member{
+    padding-top: 1%;
+}
+
+.login_member span{
+    color: grey;
+    font-style: oblique;
+    cursor: pointer;
+}
+

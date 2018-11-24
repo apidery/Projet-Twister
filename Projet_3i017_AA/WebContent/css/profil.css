@@ -1,0 +1,241 @@
+body {
+    background-color: #f3f3f3;
+    background-image: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #40A497;
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+li {
+    float: left;
+}
+
+#profil{
+    float: right;
+}
+
+#search{
+    width: 70%;
+    display: inline-block;
+}
+
+#search button{
+    width: 26px;
+    position: relative;
+    margin-left: -29px;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+li a {
+    font-family: Arial Narrow, sans-serif;
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 28px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #2C867A;
+}
+
+#recherche {
+    width: 40%;
+    height: 40px;
+    border: 0px solid #ccc;
+    border-radius: 20px; 
+    margin-top: 1%;
+    margin-left: 26%;  
+    margin-bottom: 1%;
+}
+
+#footer{    
+    width: 100%;
+    background-color: #40A497;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+
+#logo{
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 65px;
+}
+
+#lien_upmc{
+    display: inline-block;
+    float: left;
+    width: 95px;
+    height: 70px;
+}
+
+#lien_upmc:hover{
+    background-color: #2C867A;
+}
+
+#login_user{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#profil_bar{
+    background-color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+#photo{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#photo img{
+    width: 80px;
+}
+
+div.corp {
+    margin-top: 20px;
+    padding: 5px;
+    vertical-align: top;
+    width: 100%;
+    display: inline-block;
+}
+
+.comments > div {
+    border: medium solid #b2e6cc;
+    margin: 3%;
+    padding: 5%;
+}
+
+
+#cote_gauche {
+    background-color: #ffffff;
+    text-align: center;
+    width: 18%;
+    margin-left: 3%;
+}
+
+#cote_gauche h2{
+    font-size: 16px;
+    color : grey;
+    font-weight: bold;
+}
+
+#cote_gauche span{
+    color: #40A497;
+}
+
+section {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 30px;
+}
+
+#milieu {
+    width: 55%;
+    margin: auto;
+    padding-left: 50px;
+}
+
+#info_profil{
+    width: 70%;
+    float: right;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+
+.titre_info_profil{
+    font-size: 17px;
+    color: grey;
+}
+
+
+#nb_abonne{
+    float: top;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+}
+
+#link_profil{
+    display: inline-block;
+    float: right;
+    width: 30%;
+    height: 100px;
+}
+
+#nb_abonnement{
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+}
+
+
+#edit_profil{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#edit_profil button{
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid #40A497;
+    border-radius: 20px;
+    color: grey;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+#edit_color button{
+   border-radius: 20px;
+   border: 1px solid grey;
+   cursor: pointer;
+}
+
+#button_blue{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+#button_green{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+#button_red{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+#button_yellow{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}

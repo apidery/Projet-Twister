@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/enregistrement.css"/>
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <meta charset="UTF-8"/>
+    </head> 
+
+  <script> 
+    $(function(){
+      $("#header").load("html/header.html"); 
+      $("#footer").load("html/footer.html");  
+    });
+    </script>
+
+    <body>
+        <header id="header">
+        </header>
+            <section id="sec">
+                <div id="div_inscription">
+                        <h1> Créer un compte </h1>
+                        <form method="POST"  action="javascript:(function(){return;})()" onSubmit="javascript:enregistrement(this)">
+                            <div class="haut">
+                                <label for="prenom"> Prénom* </label>            
+                                <div>
+                                    <input type="text" name="prenom" id="prenom"/>
+                                </div>
+                            </div>
+                            <div class="haut">
+                                <label for="nom"> Nom* </label>
+                                <div>
+                                    <input type="text" name="nom" id="nom"/>
+                                </div>
+                            </div>
+                            <div class="ids">
+                                <label for="anniversaire"> Anniversaire </label>
+                                <input type="date" name="anniversaire" id="anniversaire"/>
+                            </div>
+                            <div class="ids">
+                                <label for="pseudo"> Pseudo* </label>
+                                <input type="text" name="login" id="login"/>
+                            </div>
+                            <div class ="ids">
+                                <label for="email"> Email* </label>
+                                <input type="email" name="email" id="email"/>
+                            </div>
+                            <div class ="ids">
+                                <label for="mdp"> Mot de passe* </label>
+                                <input type="password" name="mdp" id="mdp"/>
+                            </div>
+                            <div class ="ids">
+                                <label for="mdp2"> Répétez le mot de passe* </label>
+                                <input type="password" name="mdp_confirm" id="mdp_confirm"/>
+                            </div>
+                            <div class ="bouton">
+                                <input id="submit_inscription" type="submit" name="enregistrer" value="Inscription"/>
+                            </div>
+                            <div class="information">
+                                <p> * : Champs obligatoires </p>
+                            </div>
+                        </form>
+                </div>
+            </section>
+    </body>
+</html>
