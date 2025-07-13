@@ -1,12 +1,15 @@
-# Projet de L3 à la Sorbonne Université (ex UPMC) - Twister
+# Twister – L3 project at Sorbonne University (formerly UPMC)
 
-Ce projet réalisé dans le cadre du cours de "Technologies du Web" consiste en la réalisation d'un réseau social de type "Twitter" basé sur une API REST.
+Developed as part of the “Web Technologies” course. This project consisted in building a Twitter-like social network using a RESTful API.
 
-## Composants du projet
-### Partie serveur
+### Backend
 
-Le serveur a été programmé avec JEE et le déploiement a été efféctués sur un serveur Tomcat 9.
+Developed with Java EE and deployed on a Tomcat 9 server.
 
 ### Partie cliente
 
-La partie cliente du site a été réalisée avec HTML5/CSS3 et JavaScript.
+Built with HTML5, CSS3, and vanilla JavaScript.
+
+
+
+
